@@ -1,13 +1,15 @@
 
 import './App.css';
 
-import { Button } from '@mui/material'
+import { Grid, Button } from '@mui/material'
 
 function App() {
   return (
-    <div className="App">
-      <Button variant='contained'>This is a button</Button>
-    </div>
+    <Grid container>
+      <Grid item>
+        <Button variant='contained'>This is a button</Button>
+      </Grid>
+    </Grid>
   );
 }
 
