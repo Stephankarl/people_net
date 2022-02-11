@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { Grid, Button, Typography } from '@mui/material'
 import axios from 'axios'
 
@@ -14,7 +14,14 @@ export default function People() {
     }, [])
 
     if (people.length === 0)    
-        return <div>There are no People yet</div>
+        return (
+            <Grid container>
+                <Grid item>
+                    <Typography>No Persons are found.</Typography>
+                    <Link to='/'><Button variant='outlined'>Home Page</Button></Link>
+                </Grid>
+            </Grid>    
+        )
 
   return (
     <Grid container>
