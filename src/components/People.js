@@ -9,7 +9,7 @@ export default function People() {
     const [people, setPeople] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/api/people')
+        axios.get('http://https://people-back.herokuapp.com/api/people')
         .then(res => setPeople(res.data))
     }, [])
 
