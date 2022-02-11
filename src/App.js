@@ -1,15 +1,26 @@
-
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import './App.css';
 
-import { Grid, Button } from '@mui/material'
+import People from './components/People';
+import { Grid, Button, Typography } from '@mui/material'
 
 function App() {
   return (
-    <Grid container>
-      <Grid item>
-        <Button variant='contained'>This is a button</Button>
+    <BrowserRouter>
+      <Grid container>
+        <Grid item>
+          <Typography variant='h3'>This is my app</Typography>
+          <Typography variant='h5'>Home Page</Typography>
+
+          <Routes>
+            <Route path='/people' exact element={<People />} />
+          </Routes>
+          <Link to='/people'>
+            <Button variant='contained'>See the People</Button>
+          </Link>
+        </Grid>
       </Grid>
-    </Grid>
+    </BrowserRouter>
   );
 }
 
