@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { Button } from '@mui/material'
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,7 @@ function App() {
         >
           Small Change
         </a>
+        <Button variant='contained'>This is a button</Button>
       </header>
     </div>
   );
