@@ -1,7 +1,12 @@
 import React from 'react'
+import { Grid, Typography } from '@mui/material'
 
 export default function HomePage() {
   return (
-    <div>HomePage</div>
+    <Grid container>
+      <Grid item xs={12}>
+        <Typography variant='h3' align='center'>Home Page</Typography>
+      </Grid>
+    </Grid>
   )
 }
