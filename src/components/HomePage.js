@@ -6,6 +6,7 @@ export default function HomePage() {
     <Grid container>
       <Grid item xs={12}>
         <Typography variant='h3' align='center'>Home Page</Typography>
+        <Typography>This is an update</Typography>
       </Grid>
     </Grid>
   )
